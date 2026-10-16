@@ -77,7 +77,7 @@ export function formatINR(amount: number, compact = false) {
 export function getNetResult(transactions: Transaction[], business: BusinessId) {
   return transactions.filter((tx) => tx.business === business).reduce((sum, tx) => {
     if (tx.type === "income") return sum + tx.amount;
-    if (tx.type === "expense" || tx.type === "advance") return sum - tx.amount;
+    if (tx.type === "expense") return sum - tx.amount;
     return sum;
   }, 0);
 }
