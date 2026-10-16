@@ -8,3 +8,5 @@
 > Commits you push to the connected branch sync back to Lovable and show up in
 > the editor, so keep the branch in a working state.
 <!-- LOVABLE:END -->
+
+- Keep the accounting workspace centered at `/` with locally switched dashboard, transaction, and settlement views; clearly label illustrative rows because live financial records must come from the owner-scoped Cloud ledger.
